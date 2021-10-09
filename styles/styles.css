@@ -1,0 +1,119 @@
+body
+{
+	margin:0px;
+}
+/*......Header Styles.......*/
+header
+{
+	background-color:black;
+	color:white;
+	height:70px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+header>h1
+{
+	margin:0px;
+}
+header #links
+{
+
+}
+header #links a
+{
+	color:white;
+	text-decoration:none;
+	margin:17px;
+	padding:6px 15px;
+	background-color:orange;
+	border-radius:12px;
+	color:black;
+}
+header #links a:hover
+{
+	box-shadow:0 0 10px white;
+}
+.fa
+{
+	padding-right:4px;
+}
+
+@media(min-width:0px) and (max-width:900px)
+{
+	header
+	{
+		flex-direction:column;
+		height:100px;
+	}
+	header #links a
+	{
+		position:relative;
+		top:-20px;
+		margin:10px;
+	}
+}
+
+/*......Landing Page.........*/
+#landing-page
+{
+	background:yellow url("../images/group.jpg") no-repeat center scroll;
+	background-size:cover;
+	height:100vh;
+	color:white;
+}
+#landing-page #wrapper
+{
+	background-color:rgba(0,0,0,0.4);
+	height:100%;
+	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+}
+#landing-page #wrapper h1
+{
+	margin:0px;
+}
+#landing-page #wrapper button
+{
+	background-color:orange;
+	color:black;
+	outline:none;
+	border:none;
+	padding:6px 28px;
+	border-radius:20px;
+	box-shadow:0 0 10px white;
+}
+#landing-page #wrapper button:hover
+{
+	cursor:pointer;
+}
+
+
+/*.........Main Content Section.............*/
+#main-content-section
+{
+	text-align:center;
+	margin-top:18px;
+}
+#main-content-section .main-content-article
+{
+	width:240px;
+	box-shadow:0 0 10px black;
+	display:inline-block;
+	margin:12px;
+	border-radius:20px;
+
+	transition:all 1s linear 0s;
+}
+#main-content-section .main-content-article:hover
+{
+	transform:scale(1.1,1.1);
+	cursor:pointer;
+}
+#main-content-section .main-content-article img
+{
+	width:inherit;
+}
